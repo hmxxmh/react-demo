@@ -1,26 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Welcome1,Welcome2 } from './components/CompType';
+import Clock from './components/Clock';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	return (
+		// const name = "jerry";
+		// const user = { firstName: "tom", lastName:  "jerry" };
+		<div className="App">
+			<h1>123123</h1>
+			<Welcome1 name="jerry"></Welcome1>
+			<Welcome2 name="jhon"></Welcome2>
+			<Clock></Clock>
+		</div>
+	);
 }
 
 export default App;
